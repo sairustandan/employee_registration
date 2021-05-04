@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
+<style type="text/css">
+	
+	#fileToUpload{
+		margin-top: 20px;
+		width: 220px;
+		text-align: center;
+	}
+   .btn{
+   	background-color: #00b33c !important;
+   }
+</style>
 <head>
 	<title>Employee Registration Form</title>
 	<meta charset="utf-8">
@@ -44,16 +55,18 @@
 				<input type="tel" class="form-control" placeholder="Mobile">
 			</div>
 
-			  <div class="col-md-12">
-			  	<h5 style ="font-family:Goudy Old Style; margin-top: 20px"></style>
-    		<label for="Date of Birth">Date of Birth</label></h5>
-  			<input type="date" id="dob" name="dob">
-  			
+				<div class="form-group row">
+					<h5 style ="font-family:Goudy Old Style; margin-top: 10px; margin-left: 15px"></style>
+			  <label for="example-date-input" class="col-2 col-form-label">Date</label>
+			  <div class="col-10">
+			    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+			  </div>
+			  		</div>	
 
-		</div>
+	
 
 				<div class="col-md-12">
-					<h5 style ="font-family:Goudy Old Style; margin-top: 20px"></style>
+					<h5 style ="font-family:Goudy Old Style; margin-top: 5px"></style>
 					<label for="inputCountry">Country</label></h5>
 					<input type="text" class="form-control"  placeholder="Country">
 				</div>
@@ -67,7 +80,7 @@
  					<div class="col-md-12">
  						<h5 style ="font-family:Goudy Old Style; margin-top: 20px"></style>
 					<label for="inputSkill">Skills</label></h5>
-					<select id="Skills" name="skills">
+						<select class="form-control">
 						<option value="IT">IT</option>
 						<option value="Accountant">Accountant</option>
 						<option value="Receptionist">Receptionist</option>
@@ -76,14 +89,14 @@
 					</select>
 				</div>
 
-					<div class="col-md-12">
+					<div class="col-md-12" style="margin-top: 10px">
 					<input type="file" name="fileToUpload" id="fileToUpload">
   					<input type="submit" value="Upload Image" name="submit">
 						
 					</div>
 
-					<div class="col-md-12" style="text-align: center; margin-top: 40px;">
-			<button type="submit" class ="btn-success">Submit</button>
+					<div class="col-md-12" style="text-align: center; margin-top: 40px; width: 140px">
+		<button type="button" class="btn btn-secondary btn-lg btn-block">SUBMIT</button>
 					</div>
 		</form>
 	</div>
